@@ -15,7 +15,7 @@ class ModelFactory {
 
             default:
                 console.log('*** Persistiendo en Memoria (default) (productos) ***')
-                return new ModelMem()
+                return new ModelFile()
         }
     }
 }
