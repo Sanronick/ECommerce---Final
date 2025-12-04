@@ -1,6 +1,7 @@
 import express from 'express'
 import RouterProductos from './router/productos.js'
 import RouterPedidos from './router/pedidos.js'
+import RouterContactos from './router/contactos.js'
 
 import cors from 'cors'
 
@@ -8,13 +9,14 @@ class Server {
     #port = null
     #routerProductos = null
     #routerPedidos = null
+    #routerContactos = null
 
 
     constructor(port) {
         this.#port = port
         this.#routerProductos = new RouterProductos()
         this.#routerPedidos = new RouterPedidos()
-
+        this.#routerContactos = new RouterContactos()
     }
 
     start() {
@@ -26,6 +28,7 @@ class Server {
 
         app.use('/api/productos', this.#routerProductos.config())
         app.use('/api/pedidos', this.#routerPedidos.config())
+        app.use('/api/contactos', this.#routerContactos.config())
 
         const PORT = this.#port
         const server = app.listen(PORT, () => console.log(`Servidor http express escuchando en http://localhost:${PORT}`))

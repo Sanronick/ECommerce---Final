@@ -5,7 +5,8 @@ import CnxMongoDB from "./model/DBMongo.js";
 
 if(
     config.MODO_PERSISTENCIA_PRODUCTOS == 'MONGODB' ||
-    config.MODO_PERSISTENCIA_PEDIDOS == 'MONGODB'
+    config.MODO_PERSISTENCIA_PEDIDOS == 'MONGODB'   ||
+    config.MODO_PERSISTENCIA_CONTACTO == 'MONGODB'
 ) {
     await CnxMongoDB.conectar()
 }
