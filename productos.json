@@ -16,10 +16,10 @@
 		"precio": "80.29",
 		"stock": "278.42",
 		"marca": "Small Metal Shoes",
-		"categoria": "Elegant",
+		"categoria": "maquillaje",
 		"detalles": "The Streamlined explicit projection Pizza offers reliable performance and darling design",
 		"contenido": "Cotton",
-		"envio": false,
+		"envio": true,
 		"foto": "https://picsum.photos/seed/5lVVulT/2630/711?blur=4",
 		"id": "2"
 	},
